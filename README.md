@@ -1,4 +1,4 @@
-# Password Manager Rest API / server
+# Password Manager REST API / server
 
 Meant to serve as backend for a password manager app in construction.
 

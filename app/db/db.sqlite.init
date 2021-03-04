@@ -1,0 +1,20 @@
+PRAGMA foreign_keys = ON;
+
+CREATE TABLE users (
+    id TEXT PRIMARY KEY,
+    key TEXT UNIQUE,
+    name TEXT,
+    email TEXT
+);
+
+CREATE TABLE password_data (
+    id TEXT PRIMARY KEY,
+    usr_id TEXT,
+    title TEXT NOT NULL,
+    salt TEXT NOT NULL,
+    count INTEGER NOT NULL,
+    length INTEGER NOT NULL,
+    created TEXT NOT NULL,
+    last_used TEXT NOT NULL,
+    FOREIGN KEY (usr_id) REFERENCES users(id)
+);

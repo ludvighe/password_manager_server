@@ -1,6 +1,6 @@
 # Password Manager REST API / server
 
-Meant to serve as backend for a [password manager app](https://github.com/ludvighe/password_manager) in construction.
+Meant to serve as backend for a [password manager app](https://github.com/ludvighe/murmelpass).
 
 # 1. Use
 

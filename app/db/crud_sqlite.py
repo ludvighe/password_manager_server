@@ -10,8 +10,8 @@ class CrudSqlite(CrudInterface):
 
     def __execute_query(self, query, values):
         # print('Reading from ' + self.db_path)
-        print('Query: ' + query)
-        print('Values: ' + str(values))
+        # print('Query: ' + query)
+        # print('Values: ' + str(values))
 
         with sqlite3.connect(self.db_path) as conn:
             cursor = conn.cursor()

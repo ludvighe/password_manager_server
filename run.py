@@ -2,7 +2,7 @@ import config
 import app.tests.app_test as app_test
 
 conf = config.Config()
-if conf.TESTING: app_test.launch_test()
+if conf.TESTING: app_test.launch_test(verbose=conf.TESTING_VERBOSE)
 
 from flask import Flask, request, jsonify
 import os

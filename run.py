@@ -27,4 +27,9 @@ PasswordDataView(app, db)
 
 # Run server
 if __name__ == '__main__':
-    app.run(debug=conf.DEBUG)
+    if conf.DEBUG:
+        # Run locally with debug
+        app.run(debug=conf.DEBUG)
+    else:
+        # Run production without debug (Available on LAN)
+        app.run(debug=conf.DEBUG, host='0.0.0.0', port=5000)

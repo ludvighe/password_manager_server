@@ -1,3 +1,5 @@
+_[deprecated](https://github.com/ludvighe/vispass)_
+
 # Password Manager REST API / server
 
 Meant to serve as backend for a [password manager app](https://github.com/ludvighe/murmelpass).
